@@ -1,0 +1,499 @@
+<html>
+<head>
+<title> Student Registration Form </title>
+<head>
+<style>
+h3{
+  font-family: Calibri;
+  font-size: 25pt;        
+  font-style: normal;
+  font-weight: bold;
+  color:slateblue;
+  text-align: center;
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri;
+  color:white;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align:;
+  background-color: SlateBlue;
+  border-collapse: collapse;
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+</style>
+
+
+<script type="text/javascript">
+
+function validate(){
+
+if(document.myForm.First_Name.value==""){
+
+alert("Please provide First Name !");
+document.myForm.First_Name.focus();
+return false;
+}
+
+if(document.myForm.Last_Name.value==""){
+
+alert("Please provide Last Name !");
+document.myForm.Last_Name.focus();
+return false;
+}
+
+if(document.myForm.Mobile.value==""){
+
+alert("Please provide mobile number !!");
+document.myForm.Mobile.focus();
+return false;
+}
+
+if(document.myForm.Email.value==""){
+
+alert("Please provide valid Email !!");
+document.myForm.Email.focus();
+return false;
+}
+
+if(document.myForm.Password.value==""){
+
+alert("Please Enter Password !!");
+document.myForm.Password.focus();
+return false;
+}
+
+if(document.myForm.city.value==""){
+
+alert("Please provide city");
+document.myForm.city.focus();
+return false;
+}
+
+if(document.myForm.state.value==""){
+
+alert("Please Enter State !!");
+document.myForm.state.focus();
+return false;
+}
+
+return(true);
+
+}
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+<form action = "#" name = "myForm" onSubmit = "return (validate())";>
+
+<h3 align = "center"> STUDENT REGISTRATION FORM </h3>
+
+<table align = "center" cellpadding="9">
+
+<tr>
+<td> First Name : </td>
+<td>
+<input type = "text" name = "First_Name" placeholder="First Name" />
+</td>
+</tr>
+
+<tr>
+<td> Last Name : </td>
+<td>
+<input type = "text" name ="Last_Name" placeholder="Last Name" />
+</td>
+
+</tr>
+
+
+<tr>
+<td> Gender : </td>
+<td> Male
+<input type="radio" name="Gender" value="male" />
+Female
+ 
+ <input type="radio" name="Gender" value="female" />
+</td>
+</tr>
+
+
+<tr>
+<td> Moblie No. </td>
+<td>
+      <input type="text" name="Mobile" placeholder="Moblie Number" />
+</td>
+</tr>
+
+<tr>
+<td> Email : </td>
+<td> <input type="text" name="Email" placeholder="Email Id" />
+</td>
+</tr>
+
+
+<tr>
+<td> Password : </td>
+<td><input type="Password" name="Password" placeholder="Password" />
+</td>
+</tr>
+
+
+<tr>
+<td> Address : </td>
+
+<td>
+<textarea name = "Address" rows="5" cols="20" placeholder="Address" />
+
+</textarea>
+</td>
+
+</tr>
+
+<tr>
+<td> City :</td>
+
+<td>
+<input type="text" name="city" placeholder="City" />
+</td>
+
+</tr>
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+
+
+<tr>
+<td> State : </td>
+<td>
+<input type="text" name="state" placeholder="State" />
+</td>
+
+</tr>
+
+
+<tr>
+<td> Country : </td>
+<td>
+<input type="text" name="Country" value="INDIA" readonly="readonly" />
+</td>
+</tr>
+
+
+<tr>
+<td> Select Course :</td> <br>
+<td>
+Computer<input type="radio" name="Course" value="Computer" />
+
+Mechanical<input type="radio" name="Course" value="Mechanical" />
+
+Civil<input type="radio" name="Course" value="Civil" />
+</td>
+</tr>
+
+<tr>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>HOBBIES <br /><br /><br /></td>
+ 
+<td>
+Drawing
+<input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+Singing
+<input type="checkbox" name="Hobby_Singing" value="Singing" />
+Dancing
+<input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+Sketching
+<input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+<br />
+Others
+<input type="checkbox" name="Hobby_Other" value="Other">
+<input type="text" name="Other_Hobby" maxlength="30" />
+</td>
+</tr>
+
+<tr>
+<td align="right"> </td>
+<td>
+<input type="Submit"  Value = "Submit"  />
+</td>
+</tr>
+
+
+</table>
+
+</form>
+
+</body>
+
+</html><html>
+<head>
+<title> Student Registration Form </title>
+<head>
+<style>
+h3{
+  font-family: Calibri;
+  font-size: 25pt;        
+  font-style: normal;
+  font-weight: bold;
+  color:slateblue;
+  text-align: center;
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri;
+  color:white;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align:;
+  background-color: SlateBlue;
+  border-collapse: collapse;
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+</style>
+
+
+<script type="text/javascript">
+
+function validate(){
+
+if(document.myForm.First_Name.value==""){
+
+alert("Please provide First Name !");
+document.myForm.First_Name.focus();
+return false;
+}
+
+if(document.myForm.Last_Name.value==""){
+
+alert("Please provide Last Name !");
+document.myForm.Last_Name.focus();
+return false;
+}
+
+if(document.myForm.Mobile.value==""){
+
+alert("Please provide mobile number !!");
+document.myForm.Mobile.focus();
+return false;
+}
+
+if(document.myForm.Email.value==""){
+
+alert("Please provide valid Email !!");
+document.myForm.Email.focus();
+return false;
+}
+
+if(document.myForm.Password.value==""){
+
+alert("Please Enter Password !!");
+document.myForm.Password.focus();
+return false;
+}
+
+if(document.myForm.city.value==""){
+
+alert("Please provide city");
+document.myForm.city.focus();
+return false;
+}
+
+if(document.myForm.state.value==""){
+
+alert("Please Enter State !!");
+document.myForm.state.focus();
+return false;
+}
+
+return(true);
+
+}
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+<form action = "#" name = "myForm" onSubmit = "return (validate())";>
+
+<h3 align = "center"> STUDENT REGISTRATION FORM </h3>
+
+<table align = "center" cellpadding="9">
+
+<tr>
+<td> First Name : </td>
+<td>
+<input type = "text" name = "First_Name" placeholder="First Name" />
+</td>
+</tr>
+
+<tr>
+<td> Last Name : </td>
+<td>
+<input type = "text" name ="Last_Name" placeholder="Last Name" />
+</td>
+
+</tr>
+
+
+<tr>
+<td> Gender : </td>
+<td> Male
+<input type="radio" name="Gender" value="male" />
+Female
+ 
+ <input type="radio" name="Gender" value="female" />
+</td>
+</tr>
+
+
+<tr>
+<td> Moblie No. </td>
+<td>
+      <input type="text" name="Mobile" placeholder="Moblie Number" />
+</td>
+</tr>
+
+<tr>
+<td> Email : </td>
+<td> <input type="text" name="Email" placeholder="Email Id" />
+</td>
+</tr>
+
+
+<tr>
+<td> Password : </td>
+<td><input type="Password" name="Password" placeholder="Password" />
+</td>
+</tr>
+
+
+<tr>
+<td> Address : </td>
+
+<td>
+<textarea name = "Address" rows="5" cols="20" placeholder="Address" />
+
+</textarea>
+</td>
+
+</tr>
+
+<tr>
+<td> City :</td>
+
+<td>
+<input type="text" name="city" placeholder="City" />
+</td>
+
+</tr>
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+
+
+<tr>
+<td> State : </td>
+<td>
+<input type="text" name="state" placeholder="State" />
+</td>
+
+</tr>
+
+
+<tr>
+<td> Country : </td>
+<td>
+<input type="text" name="Country" value="INDIA" readonly="readonly" />
+</td>
+</tr>
+
+
+<tr>
+<td> Select Course :</td> <br>
+<td>
+Computer<input type="radio" name="Course" value="Computer" />
+
+Mechanical<input type="radio" name="Course" value="Mechanical" />
+
+Civil<input type="radio" name="Course" value="Civil" />
+</td>
+</tr>
+
+<tr>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>HOBBIES <br /><br /><br /></td>
+ 
+<td>
+Drawing
+<input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+Singing
+<input type="checkbox" name="Hobby_Singing" value="Singing" />
+Dancing
+<input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+Sketching
+<input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+<br />
+Others
+<input type="checkbox" name="Hobby_Other" value="Other">
+<input type="text" name="Other_Hobby" maxlength="30" />
+</td>
+</tr>
+
+<tr>
+<td align="right"> </td>
+<td>
+<input type="Submit"  Value = "Submit"  />
+</td>
+</tr>
+
+
+</table>
+
+</form>
+
+</body>
+
+</html>
